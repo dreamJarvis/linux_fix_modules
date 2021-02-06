@@ -1,5 +1,0 @@
-https://atcoder.jp/contests/abc153/tasks/abc153_e
-crestedLbisVsMonster.cpp 
-crestedLbis_vs_Monsters_test.cpp
-
-School of Geometry (code chef: feb long challenge)
