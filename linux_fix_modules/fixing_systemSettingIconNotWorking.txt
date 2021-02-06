@@ -1,12 +1,12 @@
 if you have installed pop theme as the default theme then follow these steps to fix the system settings :
 
 remove pop-theme :
-    sudo ppa-purge ppa:system76/pop &&
+    $ sudo ppa-purge ppa:system76/pop &&
 
 remove system76/pop repository and GPG key from /etc/apt/* :
     First you need to find the key id of the key you added. Do this by the command:
 
-    sudo apt-key list
+    $ sudo apt-key list
     It will list all the keys that you have, with each entry looking like this:
 
     pub   1024R/B455BEF0 2010-07-29
@@ -17,11 +17,11 @@ remove system76/pop repository and GPG key from /etc/apt/* :
     $ apt-key list | grep clicompan
 
 remove apt cache :
-    sudo apt-get clean
+    $ sudo apt-get clean
 
 remove broken gnome-control-center from system76/pop :
-    sudo apt-get remove gnome-control-center
-    sudo apt autoremove
+    $ sudo apt-get remove gnome-control-center
+    $ sudo apt autoremove
 
 install original gnome-control-center :
-    sudo apt-get install gnome-control-center
+    $ sudo apt-get install gnome-control-center
