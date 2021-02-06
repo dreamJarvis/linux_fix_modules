@@ -1,0 +1,72 @@
+    .img1 {
+        margin: 0px;
+        /*margin 0 krdiya fir bhi upr space reh gyi kyu*/
+        width: 1518px;
+        /*screen ke according kaise kru*/
+        height: 500px;
+        opacity: 0.5;
+        /*transparency of the img*/
+        z-index: -1;
+    }
+    
+    .top {
+        position: relative;
+        /*kyu use kiya*/
+        text-align: center;
+        color: black;
+        font-size: xx-large;
+        font-style: italic;
+    }
+    
+    .heading {
+        /*kyu use kiya yeh*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .img1:hover {
+        opacity: 1;
+    }
+    
+    .horizontal_bar {
+        margin: 20px;
+    }
+    /*
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        float: left;
+        //sbh ek line mai kaise aa gye
+    }
+    
+    li a {
+        font-size: large;
+        display: block;
+        //taki uss area pr bhi click kru toh link open ho jaye
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    */
+    
+    .explore {
+        font-size: x-large;
+        text-align: center;
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px gray;
+    }
+    
+    .grid-container {
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: auto auto;
+        /*to specify the number of columns*/
+        grid-gap: 10px;
+    }

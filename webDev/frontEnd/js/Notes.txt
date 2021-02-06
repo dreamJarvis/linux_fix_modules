@@ -1,0 +1,39 @@
+// === Q) What is a node ?
+A node is the generic name for any type of object in the DOM hierarchy. A node could be one of the built-in DOM elements such as document or document.body, it could be an HTML tag specified in the HTML such as <input> or <p> or it could be a text node that is created by the system to hold a block of text inside another element. So, in a nutshell, a node is any DOM object.
+
+An element is one specific type of node as there are many other types of nodes (text nodes, comment nodes, document nodes, etc...).
+
+The DOM consists of a hierarchy of nodes where each node can have a parent, a list of child nodes and a nextSibling and previousSibling. That structure forms a tree-like hierarchy. The document node would have its list of child nodes (the head node and the body node). The body node would have its list of child nodes (the top level elements in your HTML page) and so on.
+
+So, a nodeList is simply an array-like list of nodes.
+
+An element is a specific type of node, one that can be directly specified in the HTML with an HTML tag and can have properties like an id or a class. can have children, etc... There are other types of nodes such as comment nodes, text nodes, etc... with different characteristics. Each node has a property .nodeType which reports what type of node it is. You can see the various types of nodes here (diagram from MDN):
+
+
+You can see an ELEMENT_NODE is one particular type of node where the nodeType property has a value of 1.
+
+So document.getElementById("test") can only return one node and it's guaranteed to be an element (a specific type of node). Because of that it just returns the element rather than a list.
+
+Since document.getElementsByClassName("para") can return more than one object, the designers chose to return a nodeList because that's the data type they created for a list of more than one node. Since these can only be elements (only elements typically have a class name), it's technically a nodeList that only has nodes of type element in it and the designers could have made a differently named collection that was an elementList, but they chose to use just one type of collection whether it had only elements in it or not.
+
+// === Q) Difference btw HTMLCollection and NodeList
+
+The main difference between an HTMLCollection and a NodeList is that one is live and one is static. This means that when an element is appended to the DOM, a live node will recognize the new element while a static node will not.
+1. HTMLCollection
+The element methods getElementsByClassName() and getElementsByTagName() return a live HTMLCollection. It only includes the matching elements (e.g. class name or tag name) and does not include text nodes, it provides only two methods item and namedItem.
+In the example below, all the elements with the class name of fruits is selected. The item() method is then used to access the fruit at index 0 and a class name of fruit__01 is added to that element.
+const fruits = document.getElementsByClassName(‘fruits’);
+fruits.item(0).classList.add(‘fruit__01’)
+2. NodeList
+The element method *querySelectorAll()* returns a static NodeList. They look like arrays but are not.
+NodeLists have a defined forEach method as well as a few other methods including item, entries, keys, and values.
+NodeLists behave differently depending on how you access them; if you access elements using childNodes, the returned list is live and will update as more elements are added to the node. If it’s accessed using querySelectorAll(), the returned list is static and will not update if more elements are added to the node.
+// returns static collection
+ const fruits = document.querySelectorAll(‘.fruits’);
+// returns live collection
+ const fruits = document.querySelector(‘.fruits’);
+ const childFruit = fruits.childNodes;
+
+// == Q) difference btw innerText and textContent ?
+innerText take's styling into consideration
+while textContent disregard's the style property

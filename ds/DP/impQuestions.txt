@@ -1,0 +1,10 @@
+983. Minimum Cost For Tickets
+518. Coin Change 2
+377. Combination Sum IV
+1092. Shortest Common Supersequence
+44. Wildcard Matching
+10. Regular Expression Matching
+131. Palindrome Partitioning
+132. Palindrome Partitioning II
+887. Super Egg Drop
+Boolean Parenthesization

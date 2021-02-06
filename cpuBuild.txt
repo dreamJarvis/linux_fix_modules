@@ -1,0 +1,11 @@
+CPU specifications : 
+
+setup 1:
+processor : AMD 3rd Gen Ryzen 9 3900X Desktop Processor 12 Cores up to 4.6GHz 70MB Cache AM4 Socket (100-100000023BOX)
+DeepCool : castle 240RGB v2 liquid aio cooler
+Motherboard : MSI Nvidia B450 Gaming PRO Carbon MAX WiFi ATX Gaming
+RAM : Antec Katana RGB Memory, 16GB (2x8GB) DDR4 3600/3200
+Graphics Card : MSI GeForce RTX 2070 Super Ventus OC 8GB GDDR6 Gaming Graphic Card
+Storage : Transcend 1TB NVMe PCIe Gen3x4 M.2 80mm Solid State Drive
+Power Supply : Antec EA650G PRO 80 Plus Gold Certified 650 Watt Semi- Modular Gaming Power Supply
+Cabinet : DEEPCOOL MATREXX 55 V3 ADD-RGB 3F Middle Tower Supports E-ATX/ATX/Micro ATX/Mini-ITX Computer Cabinet with 3×120mm ADD-RGB Fans at Front.
